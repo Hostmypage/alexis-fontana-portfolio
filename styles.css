@@ -1,0 +1,403 @@
+body {
+    height: 100%;
+    background-position: center; /* Center the background image */
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px;
+
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header, nav, section, footer {
+    margin-bottom: 40px;
+  }
+  
+  .existing-header  {
+    background:
+    url('img/header\(01\).jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  /* ... (previous code) ... */
+
+/* Add this in your CSS to show underline on hover */
+.underline-on-hover {
+  padding: 0px 10px;
+  position: relative;
+  display:inline-block;
+  text-decoration: none; /* Remove the default underline */
+  color: #281b4b; /* Set the initial text color */
+}
+
+.underline-on-hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px; /* Adjust this value to control the underline position */
+  width: 0;
+  height: 3px; /* Adjust this value to control the underline thickness */
+  background-color: transparent; /* Set the initial color to transparent */
+  transition: width 0.3s ease, left 0.3s ease; /* Smooth transition effect for width and left */
+  transform: translateX(-0%); /* Center the transform origin */
+}
+
+.underline-on-hover:hover::after {
+  left: 0; /* Align to the left */
+  width: 100%; /* Grow to the full width */
+  background-color: #281b4b; /* Adjust this value to set the underline color on hover */
+}
+
+
+/* ... (remaining code) ... */
+
+  
+/* Add this in your CSS to style the social icons */
+.navigation-social-container {
+  margin-top: -50px;
+  margin-bottom: 0px;
+  background-color: #ede7ff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items:first baseline; /* Align items vertically at the center */
+  padding: 0px; /* Add padding for better spacing */
+  }
+
+.social-icons {
+  padding-right: 40px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.social-icons a {
+  box-align: right;
+  margin-right: 10px;
+  color:#281b4b;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  font-size: 22px;
+}
+
+  
+  nav ul {
+    list-style: none;
+    align-items: center;
+    padding-right: 40px;
+    margin-left: 20px;
+    text-align: flex;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #281b4b;
+  }
+  
+  section {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+
+  /* Services */
+  /* Add this in your CSS to create text columns */
+
+  /* ... (previous code) ... */
+
+  /* Add this in your CSS to style the gallery in columns */
+.gallery {
+  width: auto;
+  columns: 4;
+  column-gap: 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.gallery-image {
+  width: 100%; /* Each image takes up 100% width within its container */
+  margin-bottom: 20px; /* Adjust the maximum width of each image */
+  height: 100%;
+  margin: 3px; /* Adjust the margin between images */
+  border-radius: 2px;
+}
+
+  /* Add this in your CSS to style the lightbox */
+.lightbox {
+  display:flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background color with some 
+  transparency */
+}
+
+.lightbox-content {
+  display: grid;
+  margin: auto;
+  max-width: auto;
+  max-height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ... (previous code) ... */
+
+.centered-title2 {
+  background-color: #ffffff;
+  color:#4d3889;
+  font-size: 26px;
+  font-weight:bold;
+  text-align: center;
+}
+/* ... (previous code) ... */
+
+/* Add this in your CSS for the layout styling */
+.container2 {
+  text-align: center;
+  font-size: 12px;
+  color:#ffffff;
+  background-color:#281b4b; /* Set the background color */
+  padding:20px; /* Add padding for better spacing */
+}
+
+.container3 {
+  text-align: center;
+  font-size: 12px;
+  color:#ffffff;
+  background: 
+  url('img/about_background\(4\).jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding:20px; /* Add padding for better spacing */
+}
+
+.container4 {
+  text-align: center;
+  font-size: 12px;
+  color:#ffffff;
+  background: 
+  url('img/about_background\(3\).jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding:20px; /* Add padding for better spacing */
+}
+
+.centered-title {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 15px; /* Add space between the title and columns */
+}
+
+.text-columns {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.column {
+  flex: 1;
+  font-weight:lighter;
+  color: #ffffff;
+  text-align: left;
+  margin: 10px;
+  background-color:#281b4b; /* Set the background color of each column */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* ... (remaining code) ... */
+
+
+  /* Add this in your CSS to style the logo */
+.logo {
+  text-align: center;
+  margin: 20px; /* Adjust the margin as needed */
+}
+
+/* Add this in your CSS to center a paragraph */
+ 
+footer {
+  background-color: #281b4b;
+  color: #ffffff;
+  text-align: center;
+  /* Example: Change the size of paragraphs to 18 pixels */
+  /* Ensure the footer expands to the bottom */
+  background-size: cover;
+  font-size: 12px; 
+  padding: 50px;
+  margin-bottom: 0;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 30px; /* Adjust the margin as needed */
+  margin-bottom: 0px;
+}
+
+.logo img {
+  width: 60px; /* Adjust the width of your logo */
+  height: auto;
+}
+
+/* ... (remaining code) ... */
+
+
+    /* Add this in your CSS to style the social icons */
+.modifiable-social-icons {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.modifiable-social-icons a {
+  box-align: right;
+  margin-right: 10px;
+  color:#ffffff;
+  transition: font-size 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.modifiable-social-icons a:hover {
+  font-size: 22px;
+}
+
+  
+  
+  button {
+    background-color: #281b4b;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+/*Contact and about styles begin*/
+
+/* Add this in your CSS for the two-column layout */
+.text-with-background {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: 
+    url('img/about_background.jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#ffffff; /* Set text color to white */
+}
+
+.text-with-background {
+  display: flex;
+  margin-left: 0px;
+}
+
+.text-column {
+  flex: 1;
+  padding: 70px;
+}
+
+.empty-column {
+  flex: 2;
+}
+
+button {
+  margin-top: 20px;
+  background-color:#281b4b;
+  color: #ffffff;
+  padding: 10px;
+  border:#ffffff;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  background-color:#190d38;
+  transition: 0.3s ease-in-out;
+}
+.two-column-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px; /* Adjust the gap between columns as needed */
+}
+
+.text-column2 {
+  color: #281b4b;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-bottom: 80px;
+}
+
+.text-column3 {
+  color: #281b4b;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-bottom: 0;
+}
+
+.image-column img {
+  margin-top: 40px;
+  margin-right: 0px;
+  width: 400px; /* Make the image fill its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.image-column2 img {
+  margin-top: 0px;
+  margin-bottom: -4px;
+  width: auto; /* Make the image fill its container */
+  height: 360px; /* Maintain the aspect ratio */
+}
+
+.centered-title3 {
+  text-align:center;
+  color:#281b4b;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.centered-title4 {
+  text-align:center;
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.centered-paragraph2 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  font-size: 14px;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
