@@ -140,34 +140,6 @@ body {
   border-radius: 2px;
 }
 
-  /* Add this in your CSS to style the lightbox */
-.lightbox {
-  display:flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark background color with some 
-  transparency */
-}
-
-.lightbox-content {
-  display: grid;
-  margin: auto;
-  max-width: auto;
-  max-height: 100%;
-}
-
-.close-button {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-}
-
 /* ... (previous code) ... */
 
 .centered-title2 {
